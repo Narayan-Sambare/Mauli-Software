@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mauli Software – Professional Website Development, Software Solutions & Digital Innovation. Transform your business into digital success." />
+  <meta name="keywords" content="software development, web development, mobile apps, UI/UX design, e-commerce, Spring Boot, React, Java" />
+  <meta name="author" content="Mauli Software" />
+  <meta property="og:title" content="Mauli Software – Digital Innovation" />
+  <meta property="og:description" content="Transform Your Business Into Digital Success" />
+  <meta property="og:type" content="website" />
+  <title>Mauli Software – Transform Your Business Into Digital Success</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> this 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />  
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">Mauli Software</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- PROGRESS BAR -->
+<div id="progress-bar"></div>
+
+<!-- BACK TO TOP -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Mauli Software</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#testimonials">Clients</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#portfolio" class="mobile-link">Portfolio</a>
+  <a href="#process" class="mobile-link">Process</a>
+  <a href="#tech" class="mobile-link">Technologies</a>
+  <a href="#testimonials" class="mobile-link">Clients</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for New Projects
+    </div>
+    <h1 class="hero-title">
+      Transform Your Business<br />
+      Into <span class="gradient-text">Digital Success</span>
+    </h1>
+    <div class="hero-typing-wrap">
+      <span id="typing-text"></span><span id="typing-cursor"></span>
+    </div>
+    <p class="hero-sub">
+      Professional Website Development, Software Solutions &amp; Digital Innovation.<br />
+      We build fast, modern, scalable products that drive growth.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary"><span>Get Free Consultation</span></a>
+      <a href="#portfolio" class="btn-ghost">View Portfolio</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-wheel"><div class="scroll-dot"></div></div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST / STATS
+============================================================ -->
+<section id="trust">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card" data-reveal>
+        <span class="stat-icon">🚀</span>
+        <div class="stat-num" data-count="150">0</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-card" data-reveal>
+        <span class="stat-icon">😊</span>
+        <div class="stat-num" data-count="120">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-card" data-reveal>
+        <span class="stat-icon">🏆</span>
+        <div class="stat-num" data-count="5">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card" data-reveal>
+        <span class="stat-icon">⚙️</span>
+        <div class="stat-num" data-count="20">0</div>
+        <div class="stat-label">Technologies Used</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+<section id="services" class="section">
+  <div class="container">
+    <div data-reveal class="text-center">
+      <div class="section-tag">What We Build</div>
+      <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+      <p class="section-sub">End-to-end digital solutions engineered for performance, scalability, and lasting impact.</p>
+    </div>
+    <div class="services-grid" style="margin-top:64px">
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🌐</div>
+        <div class="service-name">Website Development</div>
+        <div class="service-desc">Modern, lightning-fast websites built with cutting-edge technology — responsive, SEO-ready, and conversion-optimized.</div>
+        <div class="service-arrow">Explore →</div>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🛒</div>
+        <div class="service-name">E-Commerce Solutions</div>
+        <div class="service-desc">Complete online stores with seamless payment integration, inventory management, and powerful admin dashboards.</div>
+        <div class="service-arrow">Explore →</div>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">💼</div>
+        <div class="service-name">Business Software</div>
+        <div class="service-desc">Custom ERP, CRM, and workflow automation tools built with Spring Boot and React to streamline your operations.</div>
+        <div class="service-arrow">Explore →</div>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">📱</div>
+        <div class="service-name">Mobile App Development</div>
+        <div class="service-desc">Native and cross-platform apps for iOS and Android — beautiful, performant, and built to engage users.</div>
+        <div class="service-arrow">Explore →</div>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🎨</div>
+        <div class="service-name">UI/UX Design</div>
+        <div class="service-desc">User-centric design systems, wireframes, and prototypes that elevate your brand and delight every visitor.</div>
+        <div class="service-arrow">Explore →</div>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🔧</div>
+        <div class="service-name">Maintenance &amp; Support</div>
+        <div class="service-desc">Ongoing updates, performance monitoring, security patches, and 24/7 technical support for peace of mind.</div>
+        <div class="service-arrow">Explore →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div data-reveal>
+          <div class="section-tag">Why Mauli</div>
+          <h2 class="section-title">Built Different.<br /><span class="gradient-text">Delivered Better.</span></h2>
+          <p class="section-sub" style="margin-bottom:40px">Every project we take on is treated as if it were our own. No shortcuts, no compromises.</p>
+        </div>
+        <div class="why-list">
+          <div class="why-item" data-reveal="left">
+            <div class="why-icon">⚡</div>
+            <div class="why-text">
+              <h3>Fast Delivery</h3>
+              <p>Agile sprints and clear milestones ensure your product ships on time, every time.</p>
+            </div>
+          </div>
+          <div class="why-item" data-reveal="left">
+            <div class="why-icon">🔒</div>
+            <div class="why-text">
+              <h3>Secure Solutions</h3>
+              <p>Enterprise-grade security baked in from day one — HTTPS, auth, OWASP standards.</p>
+            </div>
+          </div>
+          <div class="why-item" data-reveal="left">
+            <div class="why-icon">🛠️</div>
+            <div class="why-text">
+              <h3>Modern Technology</h3>
+              <p>React, Spring Boot, MongoDB, Docker — we use what actually works in production.</p>
+            </div>
+          </div>
+          <div class="why-item" data-reveal="left">
+            <div class="why-icon">📱</div>
+            <div class="why-text">
+              <h3>Responsive Design</h3>
+              <p>Pixel-perfect on every device — phone, tablet, laptop, or 4K display.</p>
+            </div>
+          </div>
+          <div class="why-item" data-reveal="left">
+            <div class="why-icon">📈</div>
+            <div class="why-text">
+              <h3>SEO Optimized</h3>
+              <p>Structured data, Core Web Vitals, semantic HTML — rank higher from launch day.</p>
+            </div>
+          </div>
+          <div class="why-item" data-reveal="left">
+            <div class="why-icon">💰</div>
+            <div class="why-text">
+              <h3>Affordable Pricing</h3>
+              <p>Premium quality at startup-friendly prices. Transparent quotes, no hidden costs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual" data-reveal="right">
+        <div class="why-ring why-ring-1"><div class="why-ring-dot"></div></div>
+        <div class="why-ring why-ring-2"><div class="why-ring-dot" style="background:var(--accent);box-shadow:0 0 16px var(--accent)"></div></div>
+        <div class="why-ring why-ring-3"><div class="why-ring-dot" style="background:var(--secondary);box-shadow:0 0 16px var(--secondary)"></div></div>
+        <div class="why-center">🏆</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO
+============================================================ -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div data-reveal class="text-center">
+      <div class="section-tag">Our Work</div>
+      <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">A sample of what we've shipped for businesses across industries.</p>
+    </div>
+
+    <div class="portfolio-filters" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="ecom">E-Commerce</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="saas">SaaS</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item" data-filter-tag="web" data-reveal>
+        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0F172A,#1E3A5F)">🌾</div>
+        <div class="portfolio-overlay">
+          <h3>Mauli Farm</h3>
+          <p>E-Commerce + React + WhatsApp Checkout</p>
+          <div class="portfolio-tags"><span class="p-tag">React</span><span class="p-tag">Router v6</span><span class="p-tag">CSS3</span></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-filter-tag="saas" data-reveal>
+        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0F172A,#1a1040)">📊</div>
+        <div class="portfolio-overlay">
+          <h3>AnalyticsPro Dashboard</h3>
+          <p>Real-time SaaS analytics platform</p>
+          <div class="portfolio-tags"><span class="p-tag">Spring Boot</span><span class="p-tag">React</span><span class="p-tag">MongoDB</span></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-filter-tag="ecom" data-reveal>
+        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0F172A,#0a2e1a)">🛍️</div>
+        <div class="portfolio-overlay">
+          <h3>StyleCart</h3>
+          <p>Fashion e-commerce with Razorpay</p>
+          <div class="portfolio-tags"><span class="p-tag">Java</span><span class="p-tag">MySQL</span><span class="p-tag">React</span></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-filter-tag="mobile" data-reveal>
+        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0F172A,#1a0e2e)">📱</div>
+        <div class="portfolio-overlay">
+          <h3>FitTrack Mobile</h3>
+          <p>Android fitness tracking app</p>
+          <div class="portfolio-tags"><span class="p-tag">Android</span><span class="p-tag">Java</span><span class="p-tag">SQLite</span></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-filter-tag="web" data-reveal>
+        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0F172A,#1a2e10)">🏥</div>
+        <div class="portfolio-overlay">
+          <h3>MediCare Portal</h3>
+          <p>Hospital management system</p>
+          <div class="portfolio-tags"><span class="p-tag">Spring Boot</span><span class="p-tag">React</span><span class="p-tag">PostgreSQL</span></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-filter-tag="saas" data-reveal>
+        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0F172A,#2a1a00)">💬</div>
+        <div class="portfolio-overlay">
+          <h3>ChatFlow CRM</h3>
+          <p>Customer relationship SaaS</p>
+          <div class="portfolio-tags"><span class="p-tag">Node.js</span><span class="p-tag">React</span><span class="p-tag">MongoDB</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+============================================================ -->
+<section id="process" class="section">
+  <div class="container">
+    <div data-reveal class="text-center">
+      <div class="section-tag">How We Work</div>
+      <h2 class="section-title">From Idea to <span class="gradient-text">Launch</span></h2>
+      <p class="section-sub">A proven 5-step process that keeps every project on time, on budget, and above expectations.</p>
+    </div>
+
+    <div class="process-timeline" id="process-timeline" style="margin-top:72px">
+      <div class="process-line"><div class="process-line-fill" id="process-fill"></div></div>
+      <div class="process-step" data-reveal>
+        <div class="step-circle">🔍<div class="step-num">1</div></div>
+        <div class="step-title">Requirement Analysis</div>
+        <div class="step-desc">Deep-dive into your goals, users, and technical needs.</div>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="step-circle">🎨<div class="step-num">2</div></div>
+        <div class="step-title">Design Planning</div>
+        <div class="step-desc">Wireframes, prototypes, and design system definition.</div>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="step-circle">💻<div class="step-num">3</div></div>
+        <div class="step-title">Development</div>
+        <div class="step-desc">Agile sprints with daily updates and version control.</div>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="step-circle">🧪<div class="step-num">4</div></div>
+        <div class="step-title">Testing</div>
+        <div class="step-desc">QA, performance audits, cross-device, and security testing.</div>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="step-circle">🚀<div class="step-num">5</div></div>
+        <div class="step-title">Launch</div>
+        <div class="step-desc">Deployment, monitoring, handoff, and ongoing support.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNOLOGIES
+============================================================ -->
+<section id="tech">
+  <div class="container">
+    <div data-reveal class="text-center">
+      <div class="section-tag">Tech Stack</div>
+      <h2 class="section-title">Technologies We <span class="gradient-text">Master</span></h2>
+    </div>
+  </div>
+  <div class="tech-marquee-wrap">
+    <div class="tech-track" id="tech-track">
+      <div class="tech-chip"><span>🌐</span> HTML5</div>
+      <div class="tech-chip"><span>🎨</span> CSS3</div>
+      <div class="tech-chip"><span>⚡</span> JavaScript</div>
+      <div class="tech-chip"><span>⚛️</span> React</div>
+      <div class="tech-chip"><span>☕</span> Java</div>
+      <div class="tech-chip"><span>🍃</span> Spring Boot</div>
+      <div class="tech-chip"><span>🗄️</span> MySQL</div>
+      <div class="tech-chip"><span>🤖</span> Android</div>
+      <div class="tech-chip"><span>🍃</span> MongoDB</div>
+      <div class="tech-chip"><span>🐋</span> Docker</div>
+      <div class="tech-chip"><span>☁️</span> AWS</div>
+      <div class="tech-chip"><span>🔀</span> Git</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="tech-chip"><span>🌐</span> HTML5</div>
+      <div class="tech-chip"><span>🎨</span> CSS3</div>
+      <div class="tech-chip"><span>⚡</span> JavaScript</div>
+      <div class="tech-chip"><span>⚛️</span> React</div>
+      <div class="tech-chip"><span>☕</span> Java</div>
+      <div class="tech-chip"><span>🍃</span> Spring Boot</div>
+      <div class="tech-chip"><span>🗄️</span> MySQL</div>
+      <div class="tech-chip"><span>🤖</span> Android</div>
+      <div class="tech-chip"><span>🍃</span> MongoDB</div>
+      <div class="tech-chip"><span>🐋</span> Docker</div>
+      <div class="tech-chip"><span>☁️</span> AWS</div>
+      <div class="tech-chip"><span>🔀</span> Git</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div data-reveal class="text-center">
+      <div class="section-tag">Client Love</div>
+      <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+      <p class="section-sub">Real words from real businesses we've helped grow digitally.</p>
+    </div>
+
+    <div class="testi-carousel" style="margin-top:64px">
+      <div class="testi-track" id="testi-track">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Mauli Software delivered our e-commerce platform 3 weeks early. The quality was exceptional — clean code, pixel-perfect design, and it loaded blazing fast. Our sales increased 40% in the first month.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RK</div>
+            <div><div class="testi-name">Rahul Kapoor</div><div class="testi-role">CEO, StyleMart India</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"</div>
+          <p class="testi-text">We needed a complex hospital management system with real-time updates. The team understood our domain deeply and shipped something our staff actually loves using. Support has been outstanding too.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PS</div>
+            <div><div class="testi-name">Dr. Priya Sharma</div><div class="testi-role">Director, HealthFirst Clinics</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"</div>
+          <p class="testi-text">From concept to app store in 8 weeks. The Android app they built for us is smooth, intuitive, and exactly what we envisioned. Their React + Spring Boot expertise is genuinely world-class.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AM</div>
+            <div><div class="testi-name">Aditya Mehta</div><div class="testi-role">Founder, FitTrack</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Professional, communicative, and technically sharp. Mauli Software redesigned our entire web presence and the results speak for themselves — bounce rate down 60%, conversions tripled.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SJ</div>
+            <div><div class="testi-name">Sneha Joshi</div><div class="testi-role">Marketing Head, GrowBiz</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-controls">
+      <button class="testi-btn" id="testi-prev">←</button>
+      <button class="testi-dot active" data-idx="0"></button>
+      <button class="testi-dot" data-idx="1"></button>
+      <button class="testi-btn" id="testi-next">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+============================================================ -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div data-reveal class="text-center">
+      <div class="section-tag">Let's Build Together</div>
+      <h2 class="section-title" style="font-size:clamp(2.2rem,5vw,3.6rem)">
+        Ready To Build Your<br /><span class="gradient-text">Dream Project?</span>
+      </h2>
+      <p class="section-sub" style="margin:20px auto 0">
+        Let's turn your vision into a product that wins markets, delights users, and scales beautifully.
+      </p>
+      <div class="cta-btns">
+        <a href="#contact" class="btn-primary"><span>🚀 Start Project</span></a>
+        <a href="https://wa.me/919999999999" class="btn-ghost" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div data-reveal class="text-center">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Start a <span class="gradient-text">Conversation</span></h2>
+      <p class="section-sub">Tell us about your project and we'll get back within 24 hours with a free consultation.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal="left">
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <div><h4>Phone</h4><a href="tel:+919999999999">+91 99999 99999</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <div><h4>Email</h4><a href="mailto:hello@maulisoftware.com">hello@maulisoftware.com</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">💬</div>
+          <div><h4>WhatsApp</h4><a href="https://wa.me/919999999999" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <div><h4>Address</h4><p>Pune, Maharashtra, India</p></div>
+        </div>
+      </div>
+
+      <div data-reveal="right">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field-wrap">
+              <input type="text" id="name" placeholder=" " required />
+              <label class="field-label" for="name">Your Name</label>
+            </div>
+            <div class="field-wrap">
+              <input type="email" id="email" placeholder=" " required />
+              <label class="field-label" for="email">Email Address</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field-wrap">
+              <input type="tel" id="phone" placeholder=" " />
+              <label class="field-label" for="phone">Phone Number</label>
+            </div>
+            <div class="field-wrap">
+              <select id="service">
+                <option value="" disabled selected>Select a Service</option>
+                <option>Website Development</option>
+                <option>E-Commerce Solutions</option>
+                <option>Business Software</option>
+                <option>Mobile App Development</option>
+                <option>UI/UX Design</option>
+                <option>Maintenance & Support</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-wrap">
+            <textarea id="message" placeholder=" " required></textarea>
+            <label class="field-label" for="message">Tell us about your project…</label>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+          <div class="success-msg" id="success-msg">
+            ✅ Message sent! We'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="font-size:1.5rem">Mauli Software</a>
+        <p>We craft premium digital products — websites, apps, and software — that help businesses grow and thrive in the digital era.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="LinkedIn">💼</a>
+          <a href="#" class="social-link" title="GitHub">🐙</a>
+          <a href="#" class="social-link" title="Twitter">🐦</a>
+          <a href="https://wa.me/919999999999" class="social-link" title="WhatsApp">💬</a>
+          <a href="#" class="social-link" title="Instagram">📸</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">E-Commerce</a></li>
+          <li><a href="#">Business Software</a></li>
+          <li><a href="#">Mobile Apps</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+          <li><a href="mailto:hello@maulisoftware.com">hello@maulisoftware.com</a></li>
+          <li><a href="https://wa.me/919999999999">WhatsApp</a></li>
+          <li><a href="#">Pune, Maharashtra</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Mauli Software. Made with <span>♥</span> in Pune, India.</p>
+      <p>Privacy Policy · Terms of Service</p>
+    </div>
+  </div>
+</footer>
+<script src="/js/index.js" type="text/javascript"></script>
+</body>
+</html>
